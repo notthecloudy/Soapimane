@@ -100,8 +100,8 @@ namespace Soapimane.Controls
                 // Load data in parallel
                 var tasks = new[]
                 {
-                    FileManager.RetrieveAndAddFiles("https://api.github.com/repos/Babyhamsta/Soapimane/contents/models", "bin\\models", availableModels),
-                    FileManager.RetrieveAndAddFiles("https://api.github.com/repos/Babyhamsta/Soapimane/contents/configs", "bin\\configs", availableConfigs)
+                    FileManager.RetrieveAndAddFiles("https://api.github.com/repos/notthecloudy/Soapimane/contents/models", "bin\\models", availableModels),
+                    FileManager.RetrieveAndAddFiles("https://api.github.com/repos/notthecloudy/Soapimane/contents/configs", "bin\\configs", availableConfigs)
                 };
 
                 await Task.WhenAll(tasks);
